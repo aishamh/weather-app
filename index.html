@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Build a simple weather app with basic operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">🔍</button>
+            </div>
+            
+            <div class="weather-info" id="weatherInfo">
+                <div class="city-name" id="cityName">London</div>
+                <div class="temperature" id="temperature">22°C</div>
+                <div class="description" id="description">Partly Cloudy</div>
+                <div class="details">
+                    <div class="detail">
+                        <span>Feels like</span>
+                        <span id="feelsLike">25°C</span>
+                    </div>
+                    <div class="detail">
+                        <span>Humidity</span>
+                        <span id="humidity">65%</span>
+                    </div>
+                    <div class="detail">
+                        <span>Wind</span>
+                        <span id="windSpeed">12 km/h</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast" id="forecast">
+                <!-- 5-day forecast will be populated here -->
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                City not found. Please try again.
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
