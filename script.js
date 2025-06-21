@@ -1,7 +1,21 @@
 class WeatherApp {
     constructor() {
-        // For demo, using OpenWeatherMap API (replace with your key)
-        this.apiKey = 'demo'; // Replace with real API key in production
+        // WEATHER DATA SOURCE CONFIGURATION
+        // ================================
+        // Currently using REALISTIC MOCK DATA for demo purposes
+        // 
+        // To use REAL weather data:
+        // 1. Get a free API key from: https://openweathermap.org/api
+        // 2. Replace 'demo' below with your actual API key
+        // 3. The app will automatically use real data when available
+        //
+        // Current mock data provides realistic temperature ranges for:
+        // - Oslo: 8-20°C (Nordic climate)
+        // - Sydney: 20-28°C (Australian temperate) 
+        // - Dubai: 35-47°C (Desert climate)
+        // - And 5 other major cities with accurate climate patterns
+        
+        this.apiKey = 'demo'; // Replace with real API key: 'your_actual_api_key_here'
         this.baseUrl = 'https://api.openweathermap.org/data/2.5';
         this.init();
     }
@@ -97,19 +111,26 @@ class WeatherApp {
                 wind: Math.floor(Math.random() * 12) + 6,
                 desc: ['Clear Sky', 'Partly Cloudy', 'Breezy'][Math.floor(Math.random() * 3)]
             },
+            'oslo': { 
+                temp: Math.floor(Math.random() * 12) + 8, // 8-20°C (Nordic climate)
+                feels: Math.floor(Math.random() * 12) + 6,
+                humidity: Math.floor(Math.random() * 20) + 65, // 65-85%
+                wind: Math.floor(Math.random() * 10) + 6, // 6-16 km/h
+                desc: ['Cool', 'Partly Cloudy', 'Light Snow', 'Overcast'][Math.floor(Math.random() * 4)]
+            },
             'sydney': { 
-                temp: Math.floor(Math.random() * 10) + 18, // 18-28°C
-                feels: Math.floor(Math.random() * 10) + 21,
-                humidity: Math.floor(Math.random() * 10) + 50,
-                wind: Math.floor(Math.random() * 15) + 10, // Often windy
-                desc: ['Sunny', 'Windy', 'Clear'][Math.floor(Math.random() * 3)]
+                temp: Math.floor(Math.random() * 8) + 20, // 20-28°C (Australian temperate)
+                feels: Math.floor(Math.random() * 8) + 22,
+                humidity: Math.floor(Math.random() * 15) + 50, // 50-65%
+                wind: Math.floor(Math.random() * 12) + 12, // Often windy (12-24 km/h)
+                desc: ['Sunny', 'Windy', 'Clear', 'Partly Cloudy'][Math.floor(Math.random() * 4)]
             },
             'dubai': {
-                temp: Math.floor(Math.random() * 15) + 30, // 30-45°C
-                feels: Math.floor(Math.random() * 15) + 35,
-                humidity: Math.floor(Math.random() * 20) + 40,
-                wind: Math.floor(Math.random() * 8) + 5,
-                desc: ['Hot', 'Sunny', 'Clear Sky'][Math.floor(Math.random() * 3)]
+                temp: Math.floor(Math.random() * 12) + 35, // 35-47°C (Desert climate)
+                feels: Math.floor(Math.random() * 12) + 40,
+                humidity: Math.floor(Math.random() * 15) + 35, // 35-50% (dry heat)
+                wind: Math.floor(Math.random() * 8) + 8, // 8-16 km/h
+                desc: ['Hot', 'Sunny', 'Clear Sky', 'Very Hot'][Math.floor(Math.random() * 4)]
             },
             'moscow': {
                 temp: Math.floor(Math.random() * 20) + 5, // 5-25°C (varies greatly)

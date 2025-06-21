@@ -2,6 +2,21 @@
 
 A beautiful, modern weather application with realistic weather data and glassmorphism design.
 
+## ⚡ **Current Weather Data Source**
+
+**🔄 REALISTIC MOCK DATA** - The app currently uses carefully crafted mock data that simulates real weather patterns for different cities:
+
+- **Oslo**: 8-20°C (Nordic climate)
+- **Sydney**: 20-28°C (Australian temperate climate)  
+- **Dubai**: 35-47°C (Desert climate)
+- **London**: 15-25°C (Temperate oceanic)
+- **New York**: 20-35°C (Continental)
+- **Tokyo**: 18-30°C (Humid subtropical)
+- **Paris**: 16-24°C (Temperate oceanic)
+- **Moscow**: 5-25°C (Continental, variable)
+
+Each city has realistic humidity, wind speed, and weather condition patterns.
+
 ## ✨ Features
 
 - **Realistic Weather Data**: Different temperatures, humidity, and conditions for each city
@@ -15,12 +30,13 @@ A beautiful, modern weather application with realistic weather data and glassmor
 
 ## 🌍 Supported Cities (with realistic patterns)
 
+- **Oslo**: Cool Nordic climate (8-20°C)
+- **Sydney**: Australian temperate (20-28°C)
+- **Dubai**: Hot desert climate (35-47°C)
 - **London**: Cool, often rainy (15-25°C)
-- **New York**: Variable, warm summers (20-35°C)  
+- **New York**: Variable, warm summers (20-35°C)
 - **Tokyo**: Humid, moderate temperatures (18-30°C)
 - **Paris**: Mild, pleasant weather (16-24°C)
-- **Sydney**: Sunny, often windy (18-28°C)
-- **Dubai**: Hot, dry climate (30-45°C)
 - **Moscow**: Cold, variable seasons (5-25°C)
 - **Any other city**: Generates realistic random weather
 
